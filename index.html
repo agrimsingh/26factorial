@@ -1,1 +1,860 @@
-<!DOCTYPE html><html><head><link rel="stylesheet" href="/main.css"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/grayscale.css" rel="stylesheet"><link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"></head><body><!-- Navigation--><nav role="navigation" class="navbar navbar-custom navbar-fixed-top top-nav-collapse"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-main-collapse" class="navbar-toggle"><i class="fa fa-bars"></i></button><a href="#"><img src="img/White_26.png" style="height:10%; width:10%; margin-bottom:-50px" class="page-scroll pull-left"></a></div><!-- Collect the nav links, forms, and other content for toggling--><div class="collapse navbar-collapse navbar-right navbar-main-collapse"><ul class="nav navbar-nav"><!-- Hidden li included to remove active class from about link when scrolled up past about section--><li class="hidden"><a href="#page-top"></a></li><li><a href="#about" class="page-scroll">About</a></li><li><a href="#contact" class="page-scroll">Contact</a></li></ul></div><!-- /.navbar-collapse--></div><!-- /.container--></nav><!-- Intro Header--><header class="intro"><div class="intro-body"><div class="container"><div class="row"><div class="col-md-8 col-md-offset-2"><img src="img/White_26.png" height="40%" width="40%"><p class="intro-text">Making sense of the world around you</p><a href="#about" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a></div></div></div></div></header><section id="about" class="container content-section text-center"><div class="row"><div class="col-lg-8 col-lg-offset-2"><h2>What is 26! ?</h2><p>26! (twenty-six-factorial) is a data analytics company specializing in data collection, visualization, analytics and predictive modelling.  </p><p>We offer a suite of hardware and software solutions that capture real world user-engagement for brands and advertisers.</p><p>The name is not just an exclamation; it is a sign of multiple possibilities. </p></div></div></section><section id="contact" class="container content-section text-center"><div class="row"><div class="col-lg-8 col-lg-offset-2"><h2>Contact Us</h2><p>Feel free to email us to get in touch!</p><p><a href="mailto:agrim.singh@26factorial.com">agrim.singh@26factorial.com</a></p></div></div></section><!-- Map Section--><div id="map"></div><!-- Footer--><footer><div class="container text-center"><p>Copyright © 26! 2015</p></div></footer><!-- jQuery--><script src="js/jquery.js"></script><!-- Bootstrap Core JavaScript--><script src="js/bootstrap.min.js"></script><!-- Plugin JavaScript--><script src="js/jquery.easing.min.js"></script><!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/--><script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script><!-- Custom Theme JavaScript--><script src="js/grayscale.js"></script></body></html>
+<!doctype html>
+<!--[if IE 7]> <html lang="en" class="lt-ie9 lt-ie8 no-js"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="lt-ie9 no-js"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>26! | Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/mediaelementplayer.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <script src="assets/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="mask"><div id="loader"></div></div>
+
+    <div id="main-container">
+
+	<a id="home-scroll"></a>
+
+	<div id="navigation">
+		<div class="row">
+			<div class="large-12 columns">
+				<nav class="top-bar" data-topbar>
+				  <ul class="title-area">
+				    <li>
+				      <div id="logo">
+								<h1><a href="index.html">26!</a></h1>
+							</div>
+				    </li>
+				    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+				  </ul>
+
+				  <section class="top-bar-section">
+				    <ul id="menu" class="right">
+							<li><a class="scroll" href="#home-scroll">Home</a></li>
+							<li><a class="scroll" href="#about-scroll">About</a></li>
+							<li><a class="scroll" href="#solutions-scroll">Solutions</a></li>
+							<!-- <li><a class="scroll" href="#work-scroll">Work</a></li>
+							<li><a class="scroll" href="blog.html">Blog</a></li> -->
+							<li><a class="scroll" href="#contact-scroll">Contact</a></li>
+						</ul>
+				  </section>
+				</nav>
+			</div>
+		</div>
+	</div>
+    <section id="home">
+	<div id="home-slider">
+		<ul class="slides">
+			<li>
+				<div class="row">
+					<div class="large-12 columns text-center">
+						<div class="home-shrink">
+							<img src="assets/images/White_26.png" style="height:30%; width:30%; text-shadow: 2px 2px red;" />
+							<h1 class="display-h text-white">We are 26!</h1>
+							<div class="hr large-1 small-3"></div>
+							<h3 class="text-white">We make sense of the world around you </h3>
+						</div>
+					</div>
+				</div>
+				<img class="slider-bg" alt="slider" src="assets/images/sol.jpg" />
+			</li>
+		</ul>
+		<div class="overlay"></div>
+	</div>
+</section>
+
+<a id="about-scroll"></a>
+
+<section id="about" class="pad-large">
+  <div class="row">
+		<div class="large-12 columns">
+
+			<!-- Section Title -->
+      <div class="section-title">
+        <h1>Building Purposeful Products</h1>
+        <div class="separator size-small"><span></span></div>
+        <div class="sub-heading-text">
+          26! (twenty-six-factorial) is a data analytics company specializing in data collection, visualization, analytics and predictive modelling.
+          <br /><br />
+          We offer a suite of hardware and software solutions that capture real world user-engagement and transform the way brands and advertisers use this data.
+        <br /><br />
+          The name is not just an exclamation; it is a sign of multiple possibilities.
+        </div>
+      </div>
+
+      <!-- <div class="row centered-text">
+
+
+      		<div class="medium-4 large-4 columns centered">
+    				<span class="icon-wrap icon-with-bg fade"><i class="fa fa-laptop fa-4x fa-fw"></i></span>
+      			<div class="iconbox-content fade">
+            	<h5>Responsive Layout</h5>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+          	</div>
+      		</div>
+      		<div class="medium-4 large-4 columns">
+      			<span class="icon-wrap icon-with-bg fade"><i class="fa fa-rocket fa-4x fa-fw"></i></span>
+      			<div class="iconbox-content fade">
+            	<h5>Modern Design</h5>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+          	</div>
+      		</div>
+      		<div class="medium-4 large-4 columns">
+      			<span class="icon-wrap icon-with-bg fade"><i class="fa fa-eye fa-4x fa-fw"></i></span>
+      			<div class="iconbox-content fade">
+            	<h5>Retina Ready</h5>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+          	</div>
+      		</div>
+
+
+      </div> -->
+
+		</div>
+	</div>
+</section>
+
+<!-- <section id="team">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="section-title">
+        <h2>Meet Our Team</h2>
+        <div class="separator size-small"><span></span></div>
+        <div class="sub-heading-text">Aenenan massa. Cum sociis natoque perse penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+      </div>
+
+      <ul class="our-team team-style-1">
+        <li class="team-person fade">
+          <figure>
+            <div><img src="assets/images/m1.jpg" alt="img01"></div>
+            <figcaption class="profile">
+              <h5>John Doe</h5>
+              <span>Founder</span>
+              <p class="about-team">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. <br />Aenenan massa. Cum sociis natoque perse penatibus.</p>
+              <ul class="socials-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="team-person fade">
+          <figure>
+            <div><img src="assets/images/m2.jpg" alt="img02"></div>
+            <figcaption class="profile">
+              <h5>Jane Doe</h5>
+              <span>Creative Director</span>
+              <p class="about-team">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. <br />Aenenan massa. Cum sociis natoque perse penatibus.</p>
+              <ul class="socials-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="team-person fade">
+          <figure>
+            <div><img src="assets/images/m3.jpg" alt="img03"></div>
+            <figcaption class="profile">
+              <h5>Michael Johns</h5>
+              <span>Technical Lead</span>
+              <p class="about-team">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. <br />Aenenan massa. Cum sociis natoque perse penatibus.</p>
+              <ul class="socials-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="team-person fade">
+          <figure>
+            <div><img src="assets/images/m4.jpg" alt="img04"></div>
+            <figcaption class="profile">
+              <h5>Larry Fields</h5>
+              <span>Marketing Assistant</span>
+              <p class="about-team">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. <br />Aenenan massa. Cum sociis natoque perse penatibus.</p>
+              <ul class="socials-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> -->
+
+<a id="solutions-scroll"></a>
+<section id="solutions" class="pad-large">
+
+	<div class="row">
+		<div class="large-12 columns">
+
+			<!-- Section Title -->
+      <div class="section-title">
+        <h2>Solutions</h2>
+        <div class="separator size-small"><span></span></div>
+        <p class="sub-heading-text">We offer a wide range of services that engage with data from cradle to grave. <br /></p>
+      </div>
+
+		</div>
+	</div>
+
+	<div class="row solution-row">
+
+		<div class="large-10 large-centered columns ">
+
+			<div class="medium-6 large-6 columns solution">
+				<div class="solution-icon-holder">
+					<i class="fa fa-camera fa-3x fa-fw"></i>
+				</div>
+				<h5>FaceRecog</h5>
+				<p>
+					Intelligent facial recognition technology that recognises gender, emotion among other features, catered to targeted advertising.
+				</p>
+			</div>
+
+			<div class="medium-6 large-6 columns solution">
+				<div class="solution-icon-holder">
+					<i class="fa fa-group fa-3x fa-fw"></i>
+				</div>
+				<h5>Footfall Intelligence</h5>
+				<p>
+					Real-time footfall information of consumers present in stores across retail chains.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row solution-row">
+
+		<div class="large-10 large-centered columns ">
+
+			<div class="medium-6 large-6 columns solution">
+				<div class="solution-icon-holder">
+					<i class="fa fa-fire fa-3x fa-fw"></i>
+				</div>
+				<h5>Hot 'n Cold</h5>
+				<p>
+					Heat-maps to provide crucial insights into what is and isn’t working inside your shop.
+				</p>
+			</div>
+
+			<div class="medium-6 large-6 columns solution">
+				<div class="solution-icon-holder">
+					<i class="fa fa-mobile fa-3x fa-fw"></i>
+				</div>
+				<h5>Hello, Again</h5>
+				<p>
+          Alert system for stores when encountering returning visitors/customers
+				</p>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- <div id="facts">
+
+	<div class="horizontalinner wrapper">
+    <div class="row centered-text">
+      <div class="large-9 columns large-centered">
+        <h4 class="centered-text uppercase alt-heading">Some interesting facts about us</h4>
+        <p>Each completed project makes us even more hungry, hungry for more designs, more code and at least some more twinkies. As a result we deliver a better web experience.</p>
+      </div>
+    </div>
+
+		<div id="animated-counters" class="row column-section centered-text">
+
+			<div class="medium-3 large-3 columns centered">
+				<i class="fa fa-check-square-o fa-3x fw"></i>
+				<div class="counter" data-perc="424">
+					<div class="counter-value anim">424</div>
+					<h6 class="counter-name"><strong>Projects Completed</strong></h6>
+				</div>
+			</div>
+
+      <div class="medium-3 large-3 columns centered">
+        <i class="fa fa-coffee fa-3x fw"></i>
+        <div class="counter" data-perc="10987">
+          <div class="counter-value anim">10987</div>
+          <h6 class="counter-name"><strong>Cups Consumed</strong></h6>
+        </div>
+      </div>
+
+      <div class="medium-3 large-3 columns centered">
+        <i class="fa fa-thumbs-o-up fa-3x fw"></i>
+        <div class="counter" data-perc="233">
+          <div class="counter-value anim">233</div>
+          <h6 class="counter-name"><strong>Satisfied Clients</strong></h6>
+        </div>
+      </div>
+
+      <div class="medium-3 large-3 columns centered">
+        <i class="fa fa-cutlery fa-3x fw"></i>
+        <div class="counter" data-perc="987">
+          <div class="counter-value anim">987</div>
+          <h6 class="counter-name"><strong>Pizza's ordered</strong></h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+<!-- <section id="testimonials" class="parallax-section" style="background-image: url('assets/images/singapore.jpg');" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+
+		<div class="row">
+			<div class="large-9 large-centered columns">
+				<div id="testimonials-slider">
+					<ul class="slides text-center">
+						<li>
+								<blockquote>Prevent the "if only I had known"</blockquote>
+							<div class="hr large-1 small-3"></div>
+							<h6>John Doe</h6>
+						</li>
+
+						<li>
+
+								<blockquote>"Creepeth rule above seed herb them day. Which sixth fifth beast and god. Divided own above there bearing them."</blockquote>
+
+							<div class="hr large-1 small-3"></div>
+							<h6>Jane Doe</h6>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+</section> -->
+
+<!-- <a id="work-scroll"></a> -->
+<!-- <section id="work">
+
+	<div class="row">
+		<div class="large-12 columns">
+      <div class="section-title">
+        <h2>Our Work</h2>
+        <div class="separator size-small"><span></span></div>
+        <div class="sub-heading-text">We are a full solution digital agency from Melbourne. We design and build websites, applications, and mobile solutions.</div>
+      </div>
+		</div>
+	</div>
+
+
+    <div class="portfolio-top"></div>
+    <div class="row">
+    <div class="portfolio large-12 columns">
+      <div id="filters">
+        <ul class="clearfix">
+          <li><a id="all" href="#" data-filter="*" class="active"><span>All</span></a></li>
+          <li><a href="#" data-filter=".branding"><span>Branding</span></a></li>
+          <li><a href="#" data-filter=".design"><span>Design</span></a></li>
+          <li><a href="#" data-filter=".photography"><span>Photography</span></a></li>
+          <li><a href="#" data-filter=".videography"><span>Videography</span></a></li>
+          <li><a href="#" data-filter=".web"><span>Web</span></a></li>
+        </ul>
+      </div>
+
+      <div id="portfolio-wrap" class="">
+          <div class="portfolio-item branding web  ">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p1.jpg" alt="Portfolio 1"/>
+          </div>
+
+          <a title="Sears" class="prettyPhoto" href="assets/images/portfolio/p1.jpg">
+          <div class="project-overlay">
+              <div class="project-info">
+                  <h4 class="project-name">Sears</h4>
+                  <p class="project-categories">Lightbox</p>
+              </div>
+          </div>
+          </a>
+
+          </div>
+          <div class="portfolio-item design photography web  ">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p2.jpg" alt="Portfolio 2"/>
+          </div>
+
+          <div class="project-overlay">
+              <div class="open-project-link">
+                  <a class="open-project" href="work-video-expander.html" title="Open Project"></a>
+              </div>
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">Yielding</h4>
+                  <p class="project-categories">Video</p>
+              </div>
+          </div>
+
+          </div>
+          <div class="portfolio-item design videography  ">
+            <div class="portfolio-image fade">
+                <img src="assets/images/portfolio/p3.jpg" alt="Portfolio 3"/>
+            </div>
+
+            <div class="project-overlay">
+                <div class="open-project-link">
+                    <a class="open-project" href="work-expander.html" title="Open Project"></a>
+                </div>
+                <div class="project-info">
+                    <div class="zoom-icon"></div>
+                    <h4 class="project-name">Bearing</h4>
+                    <p class="project-categories">Ajax Portfolio</p>
+                </div>
+            </div>
+          </div>
+          <div class="portfolio-item  photography  branding web">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p4.jpg" alt="Portfolio 4"/>
+          </div>
+
+          <div class="project-overlay">
+              <div class="open-project-link">
+                  <a class="open-project" href="work-fullscreen.html" title="Open Project"></a>
+              </div>
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">Seasons</h4>
+                  <p class="project-categories">Fullscreen Portfolio</p>
+              </div>
+          </div>
+
+          </div>
+          <div class="portfolio-item  design  photography  branding web">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p5.jpg" alt="Portfolio5"/>
+          </div>
+
+          <div class="project-overlay">
+              <div class="open-project-link">
+                  <a class="open-project" href="work-fullscreen.html" title="Open Project"></a>
+              </div>
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">Open Day</h4>
+                  <p class="project-categories">Fullscreen Portfolio</p>
+              </div>
+          </div>
+
+          </div>
+
+
+
+
+          <div class="portfolio-item  design    branding videography ">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p6.jpg" alt="Portfolio 6"/>
+          </div>
+
+          <div class="project-overlay">
+              <div class="open-project-link">
+                  <a class="open-project" href="work-expander.html" title="Open Project"></a>
+              </div>
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">Red Dominion</h4>
+                  <p class="project-categories">Ajax Portfolio</p>
+              </div>
+          </div>
+
+          </div>
+
+
+
+
+
+          <div class="portfolio-item  design     videography web">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p7.jpg" alt="Portfolio 7"/>
+          </div>
+
+         <div class="project-overlay">
+              <div class="open-project-link">
+                  <a class="open-project" href="work-expander.html" title="Open Project"></a>
+              </div>
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">Blue Box</h4>
+                  <p class="project-categories">Ajax Portfolio</p>
+              </div>
+          </div>
+
+          </div>
+
+          <div class="portfolio-item   photography   design web">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p8.jpg" alt="Portfolio 8"/>
+          </div>
+
+          <a title="First Born" class="prettyPhoto" href="assets/images/portfolio/p8.jpg">
+          <div class="project-overlay">
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">First Born</h4>
+                  <p class="project-categories">Lightbox</p>
+              </div>
+          </div>
+          </a>
+
+          </div>
+          <div class="portfolio-item  design web">
+
+          <div class="portfolio-image fade">
+              <img src="assets/images/portfolio/p9.jpg" alt="Portfolio 9"/>
+          </div>
+
+          <a title="Multiply" class="prettyPhoto" href="assets/images/portfolio/p9.jpg">
+          <div class="project-overlay">
+              <div class="project-info">
+                  <div class="zoom-icon"></div>
+                  <h4 class="project-name">Multiply</h4>
+                  <p class="project-categories">Lightbox</p>
+              </div>
+          </div>
+          </a>
+
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="portfolio-bottom"></div>
+
+
+  <div id="project-page-holder">
+    <div class="clear"></div>
+    <div id="project-page-data"></div>
+  </div>
+</section> -->
+<!--
+<section id="parallax-container" class="parallax-section" style="background-image: url('assets/images/t1.jpg');" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+	<div class="has-bg-color">
+		<div class="row">
+			<div class="parallax-content small-centered columns fade">
+				<div class="alt-bg">
+					<p class="text-large light centered-text">Amazingly beautiful with exceptional attention to detail. This theme is perfect for your killer website.</p>
+					<p class="centered-text">
+						<a href="http://themeforest.net/item/frio-one-page-parallax-responsive-theme/7298727?ref=louisdalligos" class="cherio-button cherio-button1 medium-button light">Purchase this template</a>
+					</p>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<!-- <section id="clients">
+
+	<div class="row">
+		<div class="large-9 large-centered columns">
+			<h4 class="centered-text uppercase alt-heading">Over 2000+ happy clients!</h4>
+			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="medium-3 large-3 columns text-center">
+			<img class="client-img fade" alt="client-logo" src="assets/images/logo10.png" />
+		</div>
+
+		<div class="medium-3 large-3 columns text-center">
+			<img class="client-img fade" alt="client-logo" src="assets/images/logo3.png" />
+		</div>
+
+		<div class="medium-3 large-3 columns text-center">
+			<img class="client-img fade" alt="client-logo" src="assets/images/logo5.png" />
+		</div>
+
+		<div class="medium-3 large-3 columns text-center">
+			<img class="client-img fade" alt="client-logo" src="assets/images/logo11.png" />
+		</div>
+
+	</div>
+
+</section> -->
+
+<!-- <section class="video-embbed video-dark-bg">
+  <div class="vid-overlay" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); z-index: 2; -webkit-backface-visibility: hidden; -webkit-transform: translateZ(0px); opacity: 0.5; background-position: initial initial; background-repeat: initial initial;"></div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="centered-text">
+        <div class="call-to-action-inner">
+          <div class="col-text" data-animation-name="bounceIn" style="">
+            <p class="text-large light centered-text">
+              Get noticed now. This is the right theme for you!
+            </p>
+          </div>
+          <div class="col-btn" data-animation-name="fadeInUp" style="">
+            <a href="http://themeforest.net/item/frio-one-page-parallax-responsive-theme/7298727?ref=louisdalligos" class="cherio-button cherio-button1 medium-button light">Buy Now on Themeforest</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="media-wrap">
+    <div class="aligned-video-wrapper" style="width: 100%; height: 723px; margin-top: -126px; margin-left: auto;">
+
+      <video width="320" height="240">
+        <source type="video/mp4" src="assets/video/vd.mp4" />
+        <source type="video/webm" src="assets/video/vd.webm" />
+        <source type="video/ogg" src="assets/video/vd.ogv" />
+
+        <object width="320" height="240" type="application/x-shockwave-flash" data="flashmediaelement.html">
+            <param name="movie" value="flashmediaelement.html" />
+            <img src="#" width="320" height="240" alt="" title="No video playback capabilities" />
+        </object>
+      </video>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- <section id="pricing">
+  <div class="row">
+		<div class="large-12 columns">
+
+      <div class="section-title">
+        <h2>Our Plans</h2>
+        <div class="separator size-small"><span></span></div>
+        <div class="sub-heading-text">Check our plans. We’re very reasonable when it comes about pricing.</div>
+      </div>
+
+      <div class="row centered-text">
+
+
+    		<div class="medium-4 large-4 columns centered">
+          <ul class="pricing-table fade">
+            <li class="title">Free</li>
+            <li class="price">$0<span>/mo.</span></li>
+            <li class="description">50 templates to choose from</li>
+            <li class="bullet-item">10GB disk space</li>
+            <li class="bullet-item">5TB bandwidth</li>
+            <li class="bullet-item">4GB memory</li>
+            <li class="bullet-item">Prioritized Support</li>
+            <li class="cta-button"><a class="button" href="#">Sign Up</a></li>
+          </ul>
+    		</div>
+    		<div class="medium-4 large-4 columns">
+    			<ul class="pricing-table fade">
+            <li class="title">Silver</li>
+            <li class="price">$10<span>/mo.</span></li>
+            <li class="description">150 templates to choose from</li>
+            <li class="bullet-item">10GB disk space</li>
+            <li class="bullet-item">5TB bandwidth</li>
+            <li class="bullet-item">4GB memory</li>
+            <li class="bullet-item">Prioritized Support</li>
+            <li class="cta-button"><a class="button" href="#">Sign Up</a></li>
+          </ul>
+    		</div>
+    		<div class="medium-4 large-4 columns">
+    			<ul class="pricing-table fade">
+            <li class="title">Gold</li>
+            <li class="price">$20<span>/mo.</span></li>
+            <li class="description">350 templates to choose from</li>
+            <li class="bullet-item">10GB disk space</li>
+            <li class="bullet-item">5TB bandwidth</li>
+            <li class="bullet-item">4GB memory</li>
+            <li class="bullet-item">Prioritized Support</li>
+            <li class="cta-button"><a class="button" href="#">Sign Up</a></li>
+          </ul>
+    		</div>
+
+
+      </div>
+
+		</div>
+	</div>
+</section> -->
+
+<a id="contact-scroll"></a>
+
+<section id="contact" style="background-image: url('assets/images/sky2.jpg');">
+	<div id="contact-content">
+
+		<div class="row">
+			<div class="large-9 large-centered columns">
+				<!-- Section Title -->
+	      <div class="section-title">
+	        <h2>Contact Us</h2>
+	        <div class="separator size-small"><span></span></div>
+	        <p class="sub-heading-text">Get in touch with us!</p>
+	      </div>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="medium-12 large-12 columns contact-section">
+				<header>
+					<h2>Get Started</h2>
+				</header>
+
+				<!-- <div class="content">
+					<p>Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras estera dapibus. Vivamus elementum se semper nisi. Aenean vulputate.</p>
+				</div> -->
+
+				<div class="contact-info">
+					<div class="header"><p>Have a project? Drop us a line.</p></div>
+					<div class="method">
+					    <div class="label">P</div>
+					    <div class="details">+65 9372 2542</div>
+					</div>
+					<div class="method">
+					    <div class="label">E</div>
+					    <div class="details"><a href="mailto:agrim.singh@26factorial.com" target="_blank">agrim.singh@26factorial.com</a></div>
+					</div>
+					<!-- <div class="method">
+					    <div class="label">A</div>
+					    <div class="details">26 College Avenue East<br>Suite&nbsp;222<br>Melbourne, AU 123456</div>
+					</div> -->
+				</div>
+			</div>
+
+			<!-- <div class="medium-6 large-6 columns">
+
+				<div class="">
+					<form method="post" action="http://frio.cheriomedia.com/contact.php" enctype="multipart/form-data" class="contact-form">
+
+						<div class="gform_body">
+				    	<ul>
+				    		<li class="form-field">
+				    			<label class="enhanced" for="input_1_1">Full Name<span class="gfield_required">*</span></label>
+
+				    			<div class="ginput_container">
+				    				<input name="input_1" id="input_1_1" type="text" value="" class="medium" tabindex="1">
+				    			</div>
+				    		</li>
+
+				    		<li class="form-field">
+				    			<label class="enhanced" for="input_1_2">Email<span class="gfield_required">*</span></label>
+
+				    			<div class="ginput_container">
+				    				<input name="input_2" id="input_1_2" type="email" value="" class="medium" tabindex="2">
+				    			</div>
+				    		</li>
+
+				    		<li class="form-field">
+				    			<label class="enhanced" for="input_1_3">Phone</label>
+
+				    			<div class="ginput_container">
+				    				<input name="input_3" id="input_1_3" type="text" value="" class="medium" tabindex="3">
+				    			</div>
+				    		</li>
+
+				    		<li class="form-field">
+				    			<label class="enhanced" for="input_1_4">Message<span class="gfield_required">*</span></label>
+
+				    			<div class="ginput_container">
+				    				<textarea name="input_4" id="input_1_4" class="textarea medium" tabindex="4" rows="10" cols="50"></textarea>
+				    			</div>
+				    		</li>
+				    	</ul>
+				    </div>
+
+				    <div class="gform_footer top_label">
+				    	<input type="submit" id="gform_submit_button_1" class="button gform_button" value="Send" tabindex="5">
+        		</div>
+					</form>
+				</div>
+			</div> -->
+		</div>
+
+	</div><!-- END #contact-content -->
+
+
+</section>
+
+<div id="map_canvas"></div>
+
+	<footer class="site-footer">
+	  <!-- <nav class="social-links">
+	    <a href="#" class="facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	    <a href="#" class="twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	    <a href="#" class="vimeo" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	    <a href="#" class="vimeo" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	    <a href="#" class="vimeo" target="_blank"><i class="fa fa-vimeo-square fa-2x"></i></a>
+	  </nav> -->
+	  <div class="legal">
+	    <p>&copy; 2015 26! All Rights Reserved.</p>
+	  </div>
+	</footer>
+
+</div><!-- end of Main Container-->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+
+    <script src="assets/js/vendor/foundation.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/vendor/flexslider.js"></script>
+    <script src="assets/js/vendor/smooth-scroll.js"></script>
+    <script src="assets/js/vendor/sscr.js"></script>
+    <script src="assets/js/vendor/appear.js"></script>
+    <script src="assets/js/vendor/isotope.js"></script>
+    <script src="assets/js/vendor/prettyPhoto.js"></script>
+    <script src="assets/js/vendor/maximage.js"></script>
+    <script src="assets/js/vendor/bxslider.js"></script>
+    <script src="assets/js/vendor/cycleall.js"></script>
+    <script src="assets/js/vendor/waypoint.js"></script>
+    <script src="assets/js/vendor/mediaelement-and-player.min.js"></script>
+    <script src="assets/js/vendor/jquery.parallax-1.1.3.js"></script>
+    <script src="assets/js/vendor/skrollr.js"></script>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+
+    <script>
+      $(document).foundation();
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45203137-6', 'cheriomedia.com');
+      ga('send', 'pageview');
+
+    </script> -->
+  </body>
+</html>
